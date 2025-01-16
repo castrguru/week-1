@@ -1,0 +1,212 @@
+---
+import astroLogo from '../assets/astro.svg';
+import background from '../assets/background.svg';
+---
+
+<div id="container">
+	<img id="background" src={background.src} alt="" fetchpriority="high" />
+	<main>
+		<section id="hero">
+			<a href="https://astro.build"
+				><img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" /></a
+			>
+			<h1>
+				To <span class="text-5xl font-bold">get</span> started, open the <code><pre>src/pages</pre></code> directory in your project.
+			</h1>
+			<section id="links">
+				<a class="button" href="https://docs.astro.build">Read our docs</a>
+				<a href="https://astro.build/chat"
+					>Join our Discord <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36"
+						><path
+							fill="currentColor"
+							d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0a105.89 105.89 0 0 0-26.25 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2a75.57 75.57 0 0 0 64.32 0c.87.71 1.76 1.39 2.66 2a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.1 105.25 105.25 0 0 0 32.19-16.14c2.64-27.38-4.51-51.11-18.9-72.15ZM42.45 65.69C36.18 65.69 31 60 31 53s5-12.74 11.43-12.74S54 46 53.89 53s-5.05 12.69-11.44 12.69Zm42.24 0C78.41 65.69 73.25 60 73.25 53s5-12.74 11.44-12.74S96.23 46 96.12 53s-5.04 12.69-11.43 12.69Z"
+						></path></svg
+					>
+				</a>
+			</section>
+		</section>
+	</main>
+
+	<a href="https://weeklyhackathon.com/week-one" target="_blank" id="news" class="group p-4 bg-slate-100 hover:bg-rose-100 rounded-2xl border-2 border-rose-300">
+		<div class="flex items-center gap-3">
+			<svg class="size-10 text-rose-400 group-hover:text-rose-700" data-slot="icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+				<path d="M1 8.25a1.25 1.25 0 1 1 2.5 0v7.5a1.25 1.25 0 1 1-2.5 0v-7.5ZM11 3V1.7c0-.268.14-.526.395-.607A2 2 0 0 1 14 3c0 .995-.182 1.948-.514 2.826-.204.54.166 1.174.744 1.174h2.52c1.243 0 2.261 1.01 2.146 2.247a23.864 23.864 0 0 1-1.341 5.974C17.153 16.323 16.072 17 14.9 17h-3.192a3 3 0 0 1-1.341-.317l-2.734-1.366A3 3 0 0 0 6.292 15H5V8h.963c.685 0 1.258-.483 1.612-1.068a4.011 4.011 0 0 1 2.166-1.73c.432-.143.853-.386 1.011-.814.16-.432.248-.9.248-1.388Z"></path>
+			</svg>
+
+			<svg class="size-10 text-rose-700 group-hover:text-rose-400" data-slot="icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+				<path d="m9.653 16.915-.005-.003-.019-.01a20.759 20.759 0 0 1-1.162-.682 22.045 22.045 0 0 1-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 0 1 8-2.828A4.5 4.5 0 0 1 18 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 0 1-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 0 1-.69.001l-.002-.001Z"></path>
+			  </svg>
+		</div>
+
+		<span class="mt-3 block text-2xl font-bold">
+			Vote for Castr GÜRŲ
+		</span>
+
+		<span class="block text-lg font-medium tracking-tight">
+			in #HACKATHON: WEEK ONE
+		</span>
+
+		<p class="mt-2 text-pretty text-sm/6 font-medium tracking-widest">
+			Show some v2 LOVE for the EARLY frames builders paving a path for those who follow...
+		</p>
+	</a>
+</div>
+
+<style>
+	#background {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		filter: blur(100px);
+	}
+
+	#container {
+		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+		height: 100%;
+	}
+
+	main {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	#hero {
+		display: flex;
+		align-items: start;
+		flex-direction: column;
+		justify-content: center;
+		padding: 16px;
+	}
+
+	h1 {
+		font-size: 22px;
+		margin-top: 0.25em;
+	}
+
+	#links {
+		display: flex;
+		gap: 16px;
+	}
+
+	#links a {
+		display: flex;
+		align-items: center;
+		padding: 10px 12px;
+		color: #111827;
+		text-decoration: none;
+		transition: color 0.2s;
+	}
+
+	#links a:hover {
+		color: rgb(78, 80, 86);
+	}
+
+	#links a svg {
+		height: 1em;
+		margin-left: 8px;
+	}
+
+	#links a.button {
+		color: white;
+		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
+		box-shadow:
+			inset 0 0 0 1px rgba(255, 255, 255, 0.12),
+			inset 0 -2px 0 rgba(0, 0, 0, 0.24);
+		border-radius: 10px;
+	}
+
+	#links a.button:hover {
+		color: rgb(230, 230, 230);
+		box-shadow: none;
+	}
+
+	pre {
+		font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas,
+			'DejaVu Sans Mono', monospace;
+		font-weight: normal;
+		background: linear-gradient(14deg, #d83333 0%, #f041ff 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		margin: 0;
+	}
+
+	h2 {
+		margin: 0 0 1em;
+		font-weight: normal;
+		color: #111827;
+		font-size: 20px;
+	}
+
+	code {
+		display: inline-block;
+		background:
+			linear-gradient(66.77deg, #f3cddd 0%, #f5cee7 100%) padding-box,
+			linear-gradient(155deg, #d83333 0%, #f041ff 18%, #f5cee7 45%) border-box;
+		border-radius: 8px;
+		border: 1px solid transparent;
+		padding: 6px 8px;
+	}
+
+	/* .box {
+		padding: 16px;
+		background: rgba(255, 255, 255, 1);
+		border-radius: 16px;
+		border: 1px solid white;
+	} */
+
+	#news {
+		position: absolute;
+		bottom: 16px;
+		right: 16px;
+		max-width: 300px;
+		text-decoration: none;
+		transition: background 0.2s;
+		backdrop-filter: blur(50px);
+	}
+
+	/* #news:hover {
+		background: rgba(255, 255, 255, 0.55);
+	} */
+
+	@media screen and (max-height: 368px) {
+		#news {
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		#container {
+			display: flex;
+			flex-direction: column;
+		}
+
+		#hero {
+			display: block;
+			padding-top: 10%;
+		}
+
+		#links {
+			flex-wrap: wrap;
+		}
+
+		#links a.button {
+			padding: 14px 18px;
+		}
+
+		#news {
+			right: 16px;
+			left: 16px;
+			bottom: 2.5rem;
+			max-width: 100%;
+		}
+
+		h1 {
+			line-height: 1.5;
+		}
+	}
+</style>
