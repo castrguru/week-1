@@ -1,6 +1,6 @@
 # 🚀 Weekly Hackathon: Week One
 
-This is the official instructions repository for Week One of $hackathon. 
+This is the official instructions repository for Week One of $hackathon.
 
 Your mission is to build the ultimate Frames v2 starter experience.
 
@@ -26,7 +26,11 @@ Take as a starting point the resources that are now on [framesv2.com](https://fr
 2. Clone your forked repository and add your code to it
 3. Do your magic. It is recommended to commit your progress often. Eventually we will work towards making all this process done by different AIs that will judge the projects based on the github repo history.
 5. Once ready, create a 88 second piece of media that serves as a pitch of what you create, and that is your formal submission
+#### https://assets.castr.guru/vid/hackathon.mp4
+
 6. Along with the piece of media, you can submit ONE production ready link
+#### https://frameify.xyz
+
 7. Submit BOTH here: [https://forms.gle/wHXHXwxfBaag1eUi7](https://forms.gle/wHXHXwxfBaag1eUi7)
 
 ## 🏆 Judging Criteria
